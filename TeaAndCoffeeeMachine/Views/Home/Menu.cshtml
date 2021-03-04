@@ -3,8 +3,74 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<p>Here's our menu with a recipie for each!</p>
 
-<input type="button" value="Lemon Tea" onclick="location.href='@Url.Action("LemonTea", "Drinks")'" />
-<input type="button" value="Coffee" onclick="location.href='@Url.Action("Coffee", "Drinks")'" />
-<input type="button" value="Chocolate" onclick="location.href='@Url.Action("Chocolate", "Drinks")'" />
+<div class="row">
+    <div class="col-12 col-md-6">
+        <input type="image" src="~/lemon-tea.png" name="image" width="500" height="500">
+    </div>
+
+    <div class="col-12 col-md-6">
+        <p>Lemon Tea</p>
+        <ul>
+            <li>
+                Boil some water
+            </li>
+            <li>
+                Steep the water in the tea
+            </li>
+            <li>
+                Pour tea in the cup
+            </li>
+            <li>
+                Add lemon
+            </li>
+            <li>
+                Enjoy!
+            </li>
+        </ul>
+    </div>
+    <div class="col-12 col-md-6">
+        <input type="image" src="~/coffee.jpg" name="image" width="500" height="500">
+    </div>
+    <div class="col-12 col-md-6">
+        <p>Coffee</p>
+        <ul>
+            <li>
+                Boil some water
+            </li>
+            <li>
+                Brew the coffee grounds
+            </li>
+            <li>
+                Pour coffee in the cup
+            </li>
+            <li>
+                Add sugar and milk
+            </li>
+            <li>
+                Enjoy!
+            </li>
+        </ul>
+    </div>
+    <div class="col-12 col-md-6">
+        <input type="image" src="~/chocolate.jpg" name="image" width="500" height="500">
+    </div>
+    <div class="col-12 col-md-6">
+        <p>Hot Chocolate</p>
+        <ul>
+            <li>
+                Boil some water
+            </li>
+            <li>
+                Add drinking chocolate powder to the water
+            </li>
+            <li>
+                Pour chocolate in the cup
+            </li>
+            <li>
+                Enjoy!
+            </li>
+        </ul>
+    </div>
+</div>

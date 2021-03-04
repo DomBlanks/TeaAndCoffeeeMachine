@@ -3,39 +3,14 @@
     ViewData["Title"] = "LemonTea";
 }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<input id="lemon" type="image" src="smile.png" name="image" width="150" height="150">
-<input id="coffee" type="image" src="smile.png" name="image" width="150" height="150">
-<input id="chocolate" type="image" src="smile.png" name="image" width="150" height="150">
-
-<div id="footer">
-    <p id="boilingLemon"></p>
-    <p id="Steeping"></p>
-    <p id="pouring"></p>
-    <p id="addingLemon"></p>
+<div class="col-12">
+    <input type="image" src="~/lemon-tea.png" name="image" width="500" height="500">
 </div>
 
-<script>
-$(document).ready(function(){
-    $('#lemon').click(function() {
-        $("#boilingLemon").text("boiling your water")
-                    .show()
-            .fadeOut(3000, function () {
-                $("#Steeping").text("Steeping the tea")
-            .show()
-                    .delay(3000)
-                    .fadeOut(3000, function () {
-                        $("#pouring").text("Pouring the tea")
-                            .show()
-                            .delay(3000)
-                        .fadeOut(3000, function () {
-                        $("#addingLemon").text("Adding the lemon")
-                            .show()
-                            .delay(3000)
-                        });
-                    });
-            });
-        
-    });
-});
-    </script>
+<div class="col-12">
+    <p class="Thanks">Thanks for ordering you lemon tea! We hope you enjoy.</p>
+</div>
+
+<div class="col-12">
+    <p><a asp-controller="Home" asp-action="Machine">Would you like to make another order?</a></p>
+</div>
