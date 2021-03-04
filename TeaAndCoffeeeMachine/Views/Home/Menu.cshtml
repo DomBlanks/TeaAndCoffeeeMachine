@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Menu";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<input type="button" value="Lemon Tea" onclick="location.href='@Url.Action("LemonTea", "Drinks")'" />
+<input type="button" value="Coffee" onclick="location.href='@Url.Action("Coffee", "Drinks")'" />
+<input type="button" value="Chocolate" onclick="location.href='@Url.Action("Chocolate", "Drinks")'" />

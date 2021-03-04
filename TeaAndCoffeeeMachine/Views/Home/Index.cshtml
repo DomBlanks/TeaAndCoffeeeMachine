@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to the Tea and Coffee Machine</h1>
+        <p class="col-12">Below you can find our menu or go straight to the machine!</p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <a asp-controller="Home" asp-action="Menu">
+                    <img width="500" height="500" src="~/drinks.jpg" />
+                    <p>
+                        Menu
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <a asp-controller="Home" asp-action="Machine">
+                    <img width="500" height="500" src="~/machine.jpg" />
+                    <p>
+                        Machine
+                    </p>
+                </a>
+            </div>
+        </div>
