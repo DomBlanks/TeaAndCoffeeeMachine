@@ -28,7 +28,10 @@
                     <p id="HotChocolate">Warming hot Chocolate</p>
                 </div>
     </div>
+
+<!-- Scripts to add messaging on click when a user chooses an item-->
                 <script>
+                    // Function for the lemon tea
                     $(document).ready(function () {
                         $('#lemon').click(function () {
                             $("#LemonTea").text("boiling your water")
@@ -36,15 +39,13 @@
                                 .fadeOut(3000, function () {
                                     $("#LemonTea").text("Steeping the tea")
                                         .show()
-                                        .delay(3000)
                                         .fadeOut(3000, function () {
                                             $("#LemonTea").text("Pouring the tea")
                                                 .show()
-                                                .delay(3000)
+
                                                 .fadeOut(3000, function () {
                                                     $("#LemonTea").text("Adding the lemon")
                                                         .show()
-                                                        .delay(3000)
                                                         .fadeOut(3000, function () {
                                                             location.href = '/Drinks/LemonTea';
                                                          });
@@ -54,7 +55,7 @@
 
                         });
                     });
-
+                    // Function for the coffee
                     $(document).ready(function () {
                         $('#coffee').click(function () {
                             $("#FreshCoffee").text("boiling your water")
@@ -62,15 +63,12 @@
                                 .fadeOut(3000, function () {
                                     $("#FreshCoffee").text("Brewing the coffee grounds")
                                         .show()
-                                        .delay(3000)
                                         .fadeOut(3000, function () {
                                             $("#FreshCoffee").text("Pouring the coffee")
                                                 .show()
-                                                .delay(3000)
                                                 .fadeOut(3000, function () {
                                                     $("#FreshCoffee").text("Adding the milk and sugar")
                                                         .show()
-                                                        .delay(3000)
                                                     .fadeOut(3000, function () {
                                                             location.href = '/Drinks/Coffee';
                                                          });
@@ -80,7 +78,7 @@
 
                         });
                     });
-
+                    // Function for the chocolate
                     $(document).ready(function () {
                         $('#chocolate').click(function () {
                             $("#HotChocolate").text("boiling your water")
@@ -88,11 +86,9 @@
                                 .fadeOut(3000, function () {
                                     $("#HotChocolate").text("Adding the chocolate powder")
                                         .show()
-                                        .delay(3000)
                                         .fadeOut(3000, function () {
                                             $("#HotChocolate").text("Pouring the hot chocolate")
                                                 .show()
-                                                .delay(3000)
                                             .fadeOut(3000, function () {
                                                             location.href = '/Drinks/Chocolate';
                                                          });
